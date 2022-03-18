@@ -1,0 +1,25 @@
+pendiente los anteriores puntos
+
+
+
+
+
+Jenkins y su ecosistema de Plugins
+-------------------------------------------------------
+
+  unidades que extienden jenkins
+  
+  Una de las razones por la cual Jenkins es adorado es porque tiene Plugins para una mayoría de cosas.
+  Los plugins son unidades que extiende a Jenkins, después de instalarlo nuestra herramienta puede hacer algo nuevo, 
+  es recomendado instalarlos con la opción de ““Download now and Install after restart”” y así Jenkins se va a encargar 
+  de ejecutar todos los Jobs que estaban corriendo y cuando eso termine, lo va a instalar.
+  
+  ruta dentro de jenkins para la administracion de los plugins
+    http://localhost:8080/pluginManager/
+      todos los plugins
+        buscar el plugin que se necesita
+          --> recomendacion: descargar ahora y reintalar despues de reiniciar
+            --> dejar el check de reinstalar jenkis cuando la instalacion este completa
+  
+  una vez instalado, ir a la adminstracion >> configuracion global, seleccionar nodejs e instalar la version que se necesite >> save
+  
