@@ -67,6 +67,45 @@ pendiente los anteriores puntos
 
   
   
+ *** Connectándonos a GitHub ****
+ 
+ Es posible conectar un repositorio de GitHub a Jenkins para que cada vez que exista un push se haga un build del source code. 
+ Para que esto sea posible debemos realizar cambios tanto en Jenkins como en GitHub.
+
+En Jenkins:
+
+1- Debemos tener el GitHub plugin instalado
+2- Al crear el Job, debemos marcar el SCM la opción de Git, y pegar la URL del repo. (Para esta acción el host de Jenkins debe tener instalado Git)
+3- En el apartado "branches to build" si dejamos en blanco tomara en cuenta cualquier branch. 
+4- En "Build Triggers" debemos marcar la opción "GitHub hook trigger for GITScm polling"
+
+En GitHub:
+
+1- Vamos al repo de GitHub.
+2- Entramos en Settings -> Webhooks.
+3- Añadimos un nuevo Webhook.
+4- Añadimos la Payload URL. (Si la URL no acaba en /github-webhook/ GItHub lanzara un error.)
+5- Marcar "Just the push event"
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
   
   
   
